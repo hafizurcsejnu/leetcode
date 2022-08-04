@@ -1,0 +1,14 @@
+async vs defer
+-------------------
+
+Async - means execute code when it is downloaded and do not block DOM construction during downloading process. Defer - means execute code after it's downloaded and browser finished DOM construction and rendering process.
+
+Async
+Downloads in the background at a low priority (same as defer)
+Can interrupt page rendering to execute
+Executes as soon as possible and in no particular order
+
+Defer
+Downloads in the background at a low priority (same as async)
+Won't interrupt page rendering to execute
+Executes in sequence just before the DOMContentLoaded event
